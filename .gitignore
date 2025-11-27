@@ -42,6 +42,7 @@ samples/
 data/
 *.h5
 *.hdf5
+DRIVE*/
 
 # IDE
 .vscode/
