@@ -15,20 +15,63 @@ seniorProject/
 └── README.md
 ```
 
+## 快速开始
+
+### 1. 克隆项目
+
+```bash
+git clone https://github.com/xIAOdING426/senior-Project.git
+cd senior-Project
+```
+
+### 2. 一键安装依赖（推荐）
+
+**macOS/Linux:**
+```bash
+bash setup.sh
+```
+
+**Windows:**
+```cmd
+setup.bat
+```
+
+或者手动安装：
+
+```bash
+# 创建虚拟环境
+python3 -m venv venv
+
+# 激活虚拟环境
+# macOS/Linux:
+source venv/bin/activate
+# Windows:
+venv\Scripts\activate
+
+# 安装依赖
+pip install -r requirements.txt
+```
+
+### 3. 准备数据
+
+将 DRIVE 数据集的训练图像放在 `data/DRIVE/training/images/` 目录下。
+
+### 4. 开始训练
+
+```bash
+cd diffusion
+python3 train_ddpm.py
+```
+
 ## 环境要求
 
 - Python 3.8+
-- PyTorch 1.12+
-- diffusers
-- torchvision
-- PIL
-- tqdm
-
-## 安装依赖
-
-```bash
-pip install torch torchvision diffusers pillow tqdm numpy
-```
+- PyTorch 2.0+
+- diffusers 0.21+
+- torchvision 0.15+
+- Pillow 9.0+
+- tqdm 4.64+
+- numpy 1.21+
 
 ## 使用方法
 
